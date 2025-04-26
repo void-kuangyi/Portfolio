@@ -1,0 +1,133 @@
+import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Title from "../elements/title.tsx";
+import AliceCarousel from "react-alice-carousel";
+import Annotation from "../elements/annotation.tsx";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+<TextLayout>
+  <h4>Body Language</h4>
+  <h5>
+    Turning Movement into Art and Music for Rhinannin's debut album release show
+  </h5>
+  <br />
+  2024 <br />
+  Client: <a href="https://www.rhiannin.com/"> Rhinannin Music</a>
+  <br />
+  Album release show:{" "}
+  <a href="https://www.effenaar.nl/agenda/rhiannin-0">Effenaar, Eindhoven</a>
+  <br />
+  Role: Creative Technologist at Bureau Moeilijke Dingen
+  <br />
+  Supported by:{" "}
+  <a href="https://www.stimuleringsfonds.nl/">
+    Stimulerings Fonds Music x Design
+  </a>
+  <br />
+  Technology: TouchDesigner, GLSL, Leap motion hand tracking, drum tracking,
+  point cloud, abelton
+  <iframe
+    width="1120"
+    height="630"
+    src="https://www.youtube.com/embed/YA9TyZHX650?si=g272LsB0azXJFRqg"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</TextLayout>
+
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../body/particles.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../body/humantheramin.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../body/rhiannin.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../body/instinct.jpeg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../body/galaxy.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../body/flower.jpeg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../body/audience.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../body/shiva.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../body/motherly.jpeg",
+      width: 4,
+      height: 1,
+    },
+    {
+      src: "../../../body/painting.jpg",
+      width: 2,
+      height: 1,
+    },
+    {
+      src: "../../../body/twist.jpg",
+      width: 2,
+      height: 1,
+    },
+  ]}
+/>
+<Annotation>Photographers: Jostijn Ligtvoet & Joep Elderman</Annotation>
+
+<TextLayout>
+  <b>Introduction</b>
+  <Text>
+    I collaborated with Rhinannin and together with their band consisting of
+    Frank Wintermans (drums), Timon Koomen (guitar) and Jornt Duyx (keyboards,
+    bass, guitar), shown at her album release at{" "}
+    <a href="https://www.effenaar.nl/agenda/rhiannin-0">Effenaar</a> during
+    Dutch Design Week 2024. <br /> <br />
+    The project, Bodylanguage, also the name of the album, explored how to transform
+    body language into an immersive visual and audio experience. The innovative installation
+    responds visually and audibly to her movements and emotions, inviting the audience
+    to experience her multidisciplinary art with all their senses. After the completion
+    of the project, the LED installation has been travelling with her and the band,
+    showed at <a href="https://paradoxtilburg.nl/">Paradox Tilburg</a>, <a href="https://introinsitu.nl/">
+      Intro in Situ
+    </a> and more in the future.
+  </Text>
+  <b>Technology</b>
+  <Text>
+    I created 13 unique visuals for her songs, turning her paintings,
+    silhouettes, and movements into interactive art, using live body tracking
+    with Orbbec camera in <a href="https://derivative.ca/">TouchDesigner</a>. I
+    also turned visuals into audio reactive, enabled by acoustic drum triggers.
+    <br /> <br />I worked with Eva van der Born on developing a human theremin, designed
+    with leap motion hand tracking and Abelton, that translates Rhiannin’s hand gestures
+    into a musical narrative—allowing her to manipulate her voice and conduct the
+    sound simultaneously.
+  </Text>
+</TextLayout>
