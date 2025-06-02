@@ -1,0 +1,124 @@
+import { InstagramEmbed } from "react-social-media-embed";
+import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Title from "../elements/title.tsx";
+import AliceCarousel from "react-alice-carousel";
+import Annotation from "../elements/annotation.tsx";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+<TextLayout>
+  <h4>Polynode PCB</h4>
+  <br />
+  2024 <br />
+  Client: <a href="https://www.lumus-instruments.com/">Lumus Instruments</a>
+  <br />
+  Exhibition: <a href="https://www.instagram.com/p/DGfXCThI8Vj/?img_index=1">
+    "POLYNODE: CYCLES", Art Club, Houston, USA
+  </a>
+  <br />
+  Role: Designer for the PCB (Printed Circuit Board)
+  <br />
+</TextLayout>
+
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../lumus/pcb.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../lumus/pcbbacksquare.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../lumus/pcbinstall.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../lumus/pcbinstall2.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../lumus/pcb.jpeg",
+      width: 3,
+      height: 1,
+    },
+  ]}
+/>
+<Annotation>Photographers: Lumus Instruments</Annotation>
+
+<TextLayout>
+  <b>Introduction</b>
+  <Text>
+    We designed the PCB (Printed Circuit Board) for
+    <a href="https://www.lumus-instruments.com/"> Lumus Instruments</a>. The exhibition,
+    <a href="https://www.instagram.com/p/DGfXCThI8Vj/?img_index=1">
+      "POLYNODE: CYCLES"
+    </a>
+    , commissioned by Art Club in Houston, is a digital media installation that builds
+    upon the notion of embodied computation. The LED control hardware was integrated
+    into the PCB, which controls 12V RGBW digital pixels with a 5700K white LED.
+  </Text>
+  <b>Ideation</b>
+  <Text>
+    The design is inspired by{" "}
+    <a href="https://en.wikipedia.org/wiki/Voyager_Golden_Record">
+      voyager golden record
+    </a>{" "}
+    and the location of the exhibition. Houston is the headquater of NASA.
+    <img src="../../../lumus/ideation.jpg" />
+    <Annotation>Four initial ideas inspired by astronomy</Annotation>
+    <br />
+    <br />
+    <img src="../../../lumus/hexagon_outline.svg" />
+    <Annotation>Final design of PCB</Annotation>
+    The final design is inspired by our solar system. This design is based on the
+    real-time visualisation of planetary science data from NASA: <a href="https://science.nasa.gov/solar-system/">
+      Eyes on the Solar System
+    </a>. The binary code around the edges spells out: "Lumus Instruments & Bureau
+    Moeilijke Dingen".
+  </Text>
+  <b>Prototype</b>
+  <Text>
+    <PhotoGallery
+      photos={[
+        {
+          src: "../../../lumus/3dmodel.png",
+          width: 3,
+          height: 1,
+        },
+        {
+          src: "../../../lumus/prototype2.JPG",
+          width: 3,
+          height: 1,
+        },
+        {
+          src: "../../../lumus/prototype1.JPG",
+          width: 3,
+          height: 1,
+        },
+      ]}
+    />
+    To ensure the design matches expectations, a 1-to-1 3D model was made and 3D
+    printed to test out the size fitsand the lighting effect in the dark.
+  </Text>
+  <b>Production</b>
+  <Text>
+    <img src="../../../lumus/kicad.png" />I helped out routing the PCB on KiCad.
+  </Text>
+  <b>Exhibition</b>
+  <div style={{ display: "flex", justifyContent: "center" }}>
+    <InstagramEmbed
+      url="https://www.instagram.com/p/DGfXCThI8Vj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+      width={"100%"}
+    />
+  </div>
+  <Annotation>The exhibition where the PCB was used</Annotation>
+</TextLayout>

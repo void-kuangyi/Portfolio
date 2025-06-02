@@ -1,0 +1,104 @@
+import { InstagramEmbed } from "react-social-media-embed";
+import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Title from "../elements/title.tsx";
+import AliceCarousel from "react-alice-carousel";
+import Annotation from "../elements/annotation.tsx";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+<TextLayout>
+  <h4>AI Kit</h4>
+  <h5>
+    Technological and economic feasibility study of how ecosystems can
+    communicate using data, citizen science and machine learning
+  </h5>
+  <br />
+  2024 <br />
+  Collaboration: <a href="https://www.dommel.nl/">Waterschap de Dommel</a>
+  <br />
+  Role: Designer and AI Engineer
+  <br />
+</TextLayout>
+
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../ai-kit/waterprob1.jpg",
+      width: 1,
+      height: 1,
+    },
+    {
+      src: "../../../ai-kit/test.jpg",
+      width: 3,
+      height: 1,
+    },
+  ]}
+/>
+
+<TextLayout>
+  <b>Introduction</b>
+  <Text>
+    This projec examines the technological and economic feasibility of AI-kit.
+    We collaborated with Waterschap de Dommel, and developed an innovative
+    product-service system, focused on data collection, machine learning and
+    citizen participation, with the goal of giving voice to ecosystems such as
+    the River Dommel. The system consists of three collaborating components, the <strong>Water Quality Probe</strong>, a physical tool that citizens use to collect water
+    quality data; the <strong>Water Quality Predictors & Contextualizers</strong>, algorithms
+    that turn data into actionable insights; and the <strong>Digital Dommel</strong>, a platform
+    that makes these insights visual and accessible.
+  </Text>
+<b>Digital Dommel</b>
+<Text>
+  During the feasibility study, a first step was taken toward the design of the
+  Digital Dommel as an application. The application combines geospatial data
+  (GeoJSON) with interactive React components to visualize the river Dommel. The
+  application includes the following: <strong>map visualization</strong>,{" "}
+  <strong>data integration</strong> and <strong>visual effects</strong>.
+  <img src="../../../ai-kit/digitaldommel.png" />
+  <Annotation>Dommel highlighted on the map</Annotation>
+  <img src="../../../ai-kit/datavis.png" />
+  <Annotation>
+    Data visualisation (nitrate and nitrite level) of water data at different
+    water testing locations
+  </Annotation>
+</Text>
+<b>Water Quality Predictors</b>
+<Text>
+  Research was done on different regression algorithms that predict the oxygen
+  quality in the water based on different variables (e.g. temperature, Chloride,
+  Nitrogen, Nitrate, pH). Because our problem falls into the regression
+  category, with less than 100,000 data points. This led to a shortlist of
+  algorithms to test, including Lasso, ElasticNet, RidgeRegression, Support
+  Vector Regressor (SVR) with linear and RBF kernels, Ensemble Regressors, such
+  as Random Forest and Gradient Boosting.
+  <br />
+  <br />
+  The performance of the regression models is evaluated according to R² score, which
+  measures how well the model explains variation in the target variable and Mean
+  Square Error (MSE), which indicates the mean square error between predicted and
+  actual values.
+  <br />
+  <br />
+  <img src="../../../ai-kit/prediction1.png" />
+  <Annotation>Example1: Linear Regression, R2=0.38, MSE=2.55</Annotation>
+  <img src="../../../ai-kit/prediction2.png" />
+  <Annotation>Example1: Linear Regression, R2=0.97, MSE=8.52</Annotation>
+  <img src="../../../ai-kit/prediction3.png" />
+  <Annotation>Example1: Linear Regression, R2=0.37, MSE=2.6</Annotation>
+</Text>
+
+  <b>Water Quality Probe</b>
+  <Text>
+    To test the feasibility of the concept for the Water Quality Probe, a mid-fidelity prototype was developed. This probe is designed as a physical tool that allows citizens to collect water quality data from the Dommel River. It provides direct access to ecosystem data, increases engagement and forms a crucial basis for further analyses within the Digital Dommel platform.
+    <br /><br />
+    <img src="../../../ai-kit/process1.png" />
+    <Annotation> Insert the nitrate and nitrite test strip and add water sample</Annotation>
+    <img src="../../../ai-kit/process2.png"/>
+    <Annotation> Reading and tuning the colour matching</Annotation>
+     <img src="../../../ai-kit/process3.png"/>
+    <Annotation> The measured amount of nitrite is displayed on the screen on the right, with both nitrate and nitrite readings being low in this example. By pressing one of the four buttons, the user can choose from information that zooms out in scale each time. </Annotation>
+  </Text>
+  </TextLayout>
