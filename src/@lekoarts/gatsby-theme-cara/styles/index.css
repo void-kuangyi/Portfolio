@@ -18,7 +18,12 @@
   grid-row: 5;
 }
 
-.captcha {
+/* .captcha {
+  grid-column: 1 / span 2;
+  grid-row: 6;
+} */
+
+.face {
   grid-column: 1 / span 2;
   grid-row: 6;
 }
@@ -30,25 +35,25 @@
 
 .unbox {
   grid-column: 1 / span 2;
-  grid-row: 7/8;
+  grid-row: 8/9;
 }
 
-.vulnerability {
+.nebula {
   grid-column: 3 / span 2;
   grid-row: 7/8;
 }
 
 .swarm {
   grid-column: 1 / span 2;
-  grid-row: 8/9;
+  grid-row: 7/8;
 }
 
-.seasaw {
+.vulnerability {
   grid-column: 3 / span 2;
   grid-row: 8/9;
 }
 
-.nebula {
+.seasaw {
   grid-column: 1 / span 2;
   grid-row: 9/10;
 }
@@ -66,11 +71,6 @@
 .wind {
   grid-column: 3 / span 2;
   grid-row: 10/11;
-}
-
-.face {
-  grid-column: 1 / span 2;
-  grid-row: 11;
 }
 
 .header {
@@ -118,4 +118,18 @@
 
 .active {
   color: #dd6b20;
+}
+
+.playground {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  @media only screen and (max-width: 640px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  div {
+    flex: 0 0 40%;
+  }
 }

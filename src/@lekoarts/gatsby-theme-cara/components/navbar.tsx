@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import "../styles/index.css";
-import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [active, setActive] = useState("");
@@ -11,6 +10,8 @@ const NavBar = () => {
       setActive("about");
     } else if (path === "/contact/") {
       setActive("contact");
+    } else if (path === "/playground/") {
+      setActive("playground");
     } else {
       setActive("projects");
     }
@@ -27,6 +28,13 @@ const NavBar = () => {
           id="projects"
         >
           <div className="title">Projects</div>
+        </a>
+        <a
+          href="/playground"
+          className={active === "playground" ? "link active" : "link"}
+          id="playground"
+        >
+          <div className="title">Playground</div>
         </a>
         <a
           href="/about"
