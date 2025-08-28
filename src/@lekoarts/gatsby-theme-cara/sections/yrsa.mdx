@@ -1,0 +1,62 @@
+import { InstagramEmbed } from "react-social-media-embed";
+import Gap from "../elements/gap.tsx";
+import Text from "../elements/text.tsx";
+import ImageText from "../elements/imagetext.tsx";
+import Title from "../elements/title.tsx";
+import AliceCarousel from "react-alice-carousel";
+import Annotation from "../elements/annotation.tsx";
+import TextLayout from "../elements/textlayout.tsx";
+import PhotoGallery from "../elements/gallery.tsx";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+<TextLayout>
+  <h4>Yrsa - Samen Alleen in het Clubhuis</h4>
+  <br />
+  2025 <br />
+  Role: Creative Technologist & UI/UX Designer
+  <br />
+  Collaboration: <a href="https://www.effenaar.nl/hybrid-music-vibes">
+    Hybrid Music Vibe
+  </a>
+  <br />
+  Show: <a href="https://hitthecity-festival.nl/">Hit the city Festival</a>
+  <br />
+  Technology: WebGL, React.JS, Web Socket, Figma
+  <br />
+</TextLayout>
+
+<PhotoGallery
+  photos={[
+    {
+      src: "../../../yrsa/photo.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../yrsa/photo1.jpg",
+      width: 3,
+      height: 1,
+    },
+    {
+      src: "../../../yrsa/photo2.jpg",
+      width: 3,
+      height: 1,
+    },
+  ]}
+/>
+
+<Annotation>Photographer: Kuangyi Xing</Annotation>
+
+<TextLayout>
+  <b>Introduction</b>
+  <Text>
+    We collaborated with Dutch singer-songwriter YRSA, whose songs amplifies the
+    "small moments". Together, we developed a live concept, in which technology
+    is used to strengthen the bond between the artist and audience.
+    <br />
+    <br />
+    Audience become part of the show, via their phone and of fellow audience members,
+    light patterns will form, a glowing line will be drawn across the room or transform
+    the scene into a starry night, true to YRSA’s mission.
+  </Text>
+</TextLayout>

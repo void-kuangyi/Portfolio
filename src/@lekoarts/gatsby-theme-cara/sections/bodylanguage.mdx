@@ -15,12 +15,12 @@ import "react-alice-carousel/lib/alice-carousel.css";
   </h5>
   <br />
   2024 <br />
+  Role: Creative Technologist & Visual Designer
+  <br />
   Client: <a href="https://www.rhiannin.com/"> Rhinannin Music</a>
   <br />
-  Album release show:{" "}
+  Show:{" "}
   <a href="https://www.effenaar.nl/agenda/rhiannin-0">Effenaar, Eindhoven</a>
-  <br />
-  Role: Creative Technologist at Bureau Moeilijke Dingen
   <br />
   Supported by:{" "}
   <a href="https://www.stimuleringsfonds.nl/">
@@ -36,6 +36,16 @@ import "react-alice-carousel/lib/alice-carousel.css";
     title="YouTube video player"
     frameborder="0"
     allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+  <iframe
+    width="100%"
+    height="630"
+    src="https://www.youtube.com/embed/Wd0j7rui__w?si=q2RmKsmNeJvvGpaY"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
   ></iframe>
@@ -59,7 +69,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
       height: 1,
     },
     {
-      src: "../../../body/instinct.jpeg",
+      src: "../../../body/instinct2.jpg",
       width: 3,
       height: 1,
     },
@@ -69,12 +79,12 @@ import "react-alice-carousel/lib/alice-carousel.css";
       height: 1,
     },
     {
-      src: "../../../body/flower.jpeg",
+      src: "../../../body/gasp.jpg",
       width: 3,
       height: 1,
     },
     {
-      src: "../../../body/audience.jpg",
+      src: "../../../body/dancing.jpg",
       width: 3,
       height: 1,
     },
@@ -98,6 +108,16 @@ import "react-alice-carousel/lib/alice-carousel.css";
       width: 2,
       height: 1,
     },
+    {
+      src: "../../../body/petals.jpg",
+      width: 2,
+      height: 1,
+    },
+    {
+      src: "../../../body/rage2.jpg",
+      width: 2,
+      height: 1,
+    },
   ]}
 />
 <Annotation>Photographers: Jostijn Ligtvoet & Joep Elderman</Annotation>
@@ -105,29 +125,60 @@ import "react-alice-carousel/lib/alice-carousel.css";
 <TextLayout>
   <b>Introduction</b>
   <Text>
-    I collaborated with Rhinannin and together with their band consisting of
-    Frank Wintermans (drums), Timon Koomen (guitar) and Jornt Duyx (keyboards,
-    bass, guitar), shown at her album release at{" "}
-    <a href="https://www.effenaar.nl/agenda/rhiannin-0">Effenaar</a> during
-    Dutch Design Week 2024. <br /> <br />
-    The project, Bodylanguage, also the name of the album, explored how to transform
-    body language into an immersive visual and audio experience. The innovative installation
-    responds visually and audibly to her movements and emotions, inviting the audience
-    to experience her multidisciplinary art with all their senses. After the completion
-    of the project, the LED installation has been travelling with her and the band,
-    showed at <a href="https://paradoxtilburg.nl/">Paradox Tilburg</a>, <a href="https://introinsitu.nl/">
-      Intro in Situ
-    </a> and more in the future.
+    The project, Bodylanguage, also the name of the album, explored how to
+    transform body language into an immersive visual and audio experience. The
+    innovative installation responds visually and audibly to her movements and
+    emotions, inviting the audience to experience her multidisciplinary art with
+    all their senses. After the completion of the project, the LED installation
+    has been travelling with her and the band, showed at{" "}
+    <a href="https://paradoxtilburg.nl/">Paradox Tilburg</a>,{" "}
+    <a href="https://introinsitu.nl/">Intro in Situ</a> and more in the future.
+    <br /> <br />I created 13 unique visuals for her songs, turning her paintings,
+    silhouettes, and movements into interactive art, using live body tracking with
+    Orbbec camera in <a href="https://derivative.ca/">TouchDesigner</a>. I also turned
+    visuals into audio reactive, enabled by acoustic drum triggers.
+    <br /> <br />I worked with Eva van der Born on developing a human theremin,
+    designed with leap motion hand tracking and Abelton, that translates
+    Rhiannin’s hand gestures into a musical narrative—allowing her to manipulate
+    her voice and conduct the sound simultaneously.
+  </Text>
+  <b>Visual Design - Point Cloud</b>
+  <Text>
+    <div style={{ display: "flex", gap: "2px", flexWrap: "wrap" }}>
+      <img src="../../../body/line.gif" />
+      <img src="../../../body/butterfly.gif" />
+      <img src="../../../body/galaxy.gif" />
+      <img src="../../../body/petals.gif" />
+    </div>
+  </Text>
+  <b>Visual Design - Drum Reactive</b>
+  <Text>
+    <div style={{ display: "flex", gap: "2px", flexWrap: "wrap" }}>
+      <img src="../../../body/line.gif" />
+      <img src="../../../body/rage.gif" />
+      <img src="../../../body/gasp.gif" />
+      <img src="../../../body/howi.gif" />
+    </div>
+  </Text>
+  <b>Visual Design - Video Processing</b>
+  <Text>
+    <div style={{ display: "flex", gap: "2px", flexWrap: "wrap" }}>
+      <img src="../../../body/shiva.gif" />
+      <img src="../../../body/walking.gif" />
+      <img src="../../../body/dancing.gif" />
+    </div>
+  </Text>
+  <b>Visual Design - Generative Art</b>
+  <Text>
+    <div style={{ display: "flex", gap: "2px", flexWrap: "wrap" }}>
+      <img src="../../../body/touch.gif" />
+      <img src="../../../body/embryo.gif" />
+    </div>
   </Text>
   <b>Technology</b>
   <Text>
-    I created 13 unique visuals for her songs, turning her paintings,
-    silhouettes, and movements into interactive art, using live body tracking
-    with Orbbec camera in <a href="https://derivative.ca/">TouchDesigner</a>. I
-    also turned visuals into audio reactive, enabled by acoustic drum triggers.
-    <br /> <br />I worked with Eva van der Born on developing a human theremin, designed
-    with leap motion hand tracking and Abelton, that translates Rhiannin’s hand gestures
-    into a musical narrative—allowing her to manipulate her voice and conduct the
-    sound simultaneously.
+    <img src="../../../body/hardware.jpg" />
+    <img src="../../../body/techstack.png" />
+    <Annotation>Tech Stack</Annotation>
   </Text>
 </TextLayout>

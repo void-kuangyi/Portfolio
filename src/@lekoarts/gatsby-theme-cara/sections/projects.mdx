@@ -2,29 +2,21 @@ import { Badge } from "styled-badge-component";
 import "../styles/index.css";
 
 <ProjectCard
-  title="Weave"
-  bg="url(fmp/demo2.JPG)"
-  link="/weave"
-  individual={true}
-  className="weave"
-  keywords={[
-    "discursive design",
-    "data physicalisation",
-    "immigrants",
-    "cross-culture",
-    "participatory design",
-    "play and politics",
-]}> Data physicalisation of invisible barriers faced by immigrants navigating Dutch public systems
-
-</ProjectCard>
-
-<ProjectCard
   title="Body Language"
-  bg="url(body/instinct.jpeg)"
+  bg="url(body/front.jpg)"
   link="/body"
   className="body"
 >
   Interactive visual and music for Rhinannin's album release show
+</ProjectCard>
+
+<ProjectCard
+  title="Yrsa"
+  link="/yrsa"
+  className="yrsa"
+  bg="url(yrsa/photo.jpg)"
+>
+  Live music meets interactive audience experience
 </ProjectCard>
 
 <ProjectCard
@@ -55,13 +47,23 @@ import "../styles/index.css";
 -->
 
 <ProjectCard
-  title="Face Encoded"
-  bg="url(face/f3.jpg)"
-  link="/face"
-  className="face"
+  title="Weave"
+  bg="url(fmp/demo2.JPG)"
+  link="/weave"
+  individual={true}
+  className="weave"
+  keywords={[
+    "discursive design",
+    "data physicalisation",
+    "immigrants",
+    "cross-culture",
+    "participatory design",
+    "play and politics",
+  ]}
 >
-  A neural network system for face detection and recognition with real-world
-  photos
+  {" "}
+  Data physicalisation of invisible barriers faced by immigrants navigating Dutch
+  public systems
 </ProjectCard>
 
 <ProjectCard
@@ -71,6 +73,16 @@ import "../styles/index.css";
   className="ai"
 >
   Helping the river communicate using data, citizen science and machine learning
+</ProjectCard>
+
+<ProjectCard
+  title="Face Encoded"
+  bg="url(face/f3.jpg)"
+  link="/face"
+  className="face"
+>
+  A neural network system for face detection and recognition with real-world
+  photos
 </ProjectCard>
 
 <ProjectCard
@@ -96,6 +108,21 @@ import "../styles/index.css";
 >
   A haptic navigational belt for the visually impaired
 </ProjectCard>
+
+<ProjectCard
+  title="Narrative Tool"
+  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+  className="narrative"
+  link="/narrative"
+  bg="url(narrative/cover.jpg)"
+  textColor="black"
+  keywords={[
+    "storytelling",
+    "programming",
+    "UX/UI design",
+    "data visualisation",
+  ]}
+></ProjectCard>
 
 <ProjectCard
   title="Unbox"
@@ -139,21 +166,6 @@ import "../styles/index.css";
 </ProjectCard>
 
 <ProjectCard
-  title="Narrative Tool"
-  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-  className="narrative"
-  link="/narrative"
-  bg="url(narrative/cover.jpg)"
-  textColor="black"
-  keywords={[
-    "storytelling",
-    "programming",
-    "UX/UI design",
-    "data visualisation",
-  ]}
-></ProjectCard>
-
-<ProjectCard
   title="Flow"
   bg="url(flow/children.jpg)"
   link="/flow"
@@ -169,7 +181,7 @@ import "../styles/index.css";
   An alternative playground for children
 </ProjectCard>
 
-<ProjectCard
+<!--  <ProjectCard
   title="Ride with Wind"
   individual={true}
   bg="url(wind/front.png)"
@@ -180,7 +192,7 @@ import "../styles/index.css";
   A playful experience for Lego House
 </ProjectCard>
 
-<!--  <ProjectCard
+<ProjectCard
 title="Meet"
 bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
 status="Completed"
