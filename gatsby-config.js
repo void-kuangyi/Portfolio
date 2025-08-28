@@ -5,11 +5,11 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: `Xing Kuangyi`,
-    siteTitleAlt: `Xing Kuangyi's portfolio site`,
-    siteHeadline: `Xing Kuangyi's portfolio site`,
+    siteTitle: `Kuangyi Xing`,
+    siteTitleAlt: `Kuangyi Xing`,
+    siteHeadline: `Kuangyi Xing`,
     siteUrl: `https://xingkuangyi.com/`,
-    siteDescription: `Portfolio website for Xing Kuangyi`,
+    siteDescription: `Kuangyi Xing`,
     siteLanguage: `en`,
     siteImage: ``,
     author: `@lekoarts_de`,
