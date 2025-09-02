@@ -28,14 +28,14 @@
   grid-row: 6;
 }
 
-/* .captcha {
-  grid-column: 1 / span 2;
-  grid-row: 6;
-} */
-
-.face {
+.captcha {
   grid-column: 1 / span 2;
   grid-row: 7;
+}
+
+.face {
+  grid-column: 3 / span 2;
+  grid-row: 8;
 }
 
 .nebula {
@@ -50,7 +50,7 @@
 
 .narrative {
   grid-column: 3 / span 2;
-  grid-row: 8;
+  grid-row: 9;
 }
 
 .unbox {
@@ -60,7 +60,7 @@
 
 .vulnerability {
   grid-column: 3 / span 2;
-  grid-row: 9;
+  grid-row: 10;
 }
 
 .seasaw {
@@ -68,10 +68,10 @@
   grid-row: 10;
 }
 
-.flow {
+/* .flow {
   grid-column: 3 / span 2;
   grid-row: 10;
-}
+} */
 
 /* .wind {
   grid-column: 3 / span 2;
